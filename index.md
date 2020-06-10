@@ -1,37 +1,181 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/Nagdoo/nagdoo.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+    <div class="container">
+        <!-- intro begin -->
+        <div class="card" style="display:flex;flex-direction: row;justify-content: space-around;">
+            <div style="width:48%">
+                <h1>What are we going to learn.</h1>
+                <ul>
+                    <li><a href="#what-is">
+                            What is html, Why html is needed ?
+                        </a>
+                    </li>
+                    <li>
+                        How html works.
+                    </li>
+                </ul>
+                <div>
+                    This course will help you understand how an html file works and whats is role in this world of
+                    internet.
+                </div>
+            </div>
+            <hr />
+            <br />
+            <div style="width:48%">
+                <h3>Course Structure</h3>
+                <ul>
+                    <li>First html file</li>
+                    <li>Html elements (Tag)</li>
+                    <li>Adding JS to html</li>
+                    <li>Adding CSS to css</li>
+                    <li>Basic html page</li>
+                </ul>
+            </div>
+        </div>
+        <!-- intro end -->
+        <!-- pre-req begin -->
+        <div class="card">
+            <div style="width:38%">
+                <h1>What you need to know before we start.</h1>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Web_browser" target="_blank">
+                            Web Browser.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
+                            CSS.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                            JAVASCRIPT.
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <div style="width:60%">
+                <div>
+                    Don't need to worry if you don't know what CSS or JAVASCRIPT means in context for this course. We
+                    will
+                    introduce you with them in near future. For now just think of them as supporting pillars to the
+                    html,
+                    because HTML is just like a raw vegetable (You need to include some spices and ingredients to make
+                    it
+                    taste good and worth having). CSS is used in html to beautify what you wanna show, because what
+                    looks
+                    good feels good and also it increases the appeal to the user <a
+                        href="https://techterms.com/definition/user-friendly" target="_blank"> (Good user experience and
+                        User friendly) </a>. Also JAVASCRIPT is used to perform action on the html page and handle any
+                    action performed made by user.
+                </div>
+                <div class="side-note"> Note : we will understand deeply how CSS and JAVASCRIPT works, once we have
+                    complete
+                    understanding of HTML. </div>
 
-### Markdown
+            </div>
+        </div>
+        <!-- pre-req end -->
+        <!-- terminologies user begin-->
+        <div class="card">
+            <div style="width:48%">
+                <h3>Terminologies</h3>
+                <hr />
+                <div>Tag/Elements : String enclosed in < and> is a tag/element in html. Html file has opening tag and
+                        closing tag. An opening tag is enclosed in <> and a closing tag is enclosed in &lt;/ and > . For
+                            example
+                            : <code> &lt;html&gt; &lt;/html&gt; </code>
+                </div>
+            </div>
+        </div>
+        <!-- terminologies user end-->
+        <!-- what-is begin -->
+        <div class="card" id="what-is">
+            <div style="width:48%">
+                <h1>What is html, Why html is needed ?</h1>
+                <ol>
+                    <li>
+                        HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the
+                        meaning
+                        and
+                        structure of web content.
+                    </li>
+                    <li>
+                        "Hypertext" refers to links that connect web pages to one another, either within a single
+                        website or
+                        between websites.
+                    </li>
+                    <li>
+                        Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it
+                        to
+                        pages created by other people, you become an active participant in the World Wide Web.
+                    </li>
+                </ol>
+            </div>
+            <hr />
+            <div style="width:48%">
+                <div>
+                    Lets understand it like this, for anything on internet you need some type of method where you can
+                    write
+                    you content.
+                    Also to view that content we need a tool where we can open that content.
+                </div>
+                <div>
+                    Html is just like any other file on the system. It have the extension of html, htm for example
+                    index.html or index.htm index.html (perviously html was not supported by DOS operating systems thus
+                    htm
+                    was introduce, but now all OS support html).
+                </div>
+            </div>
+        </div>
+        <!-- what-is end -->
+        <!-- getting started begin -->
+        <div class="card" style="display: block;">
+            <h3>Lets get started</h3>
+            <div>Before we start you need to understand how to make an environment to work on.</div>
+            <hr />
+            <div>Setting development environments. Follow the steps to make it easy working on html development</div>
+            <ol>
+                <li>Select <a href="https://en.wikipedia.org/wiki/Integrated_development_environment"
+                        target="_blank">IDE (tool we will be using to work on)</a> it can be any text editor.
+                    For our course we will be using vscode as ide, <a href="https://code.visualstudio.com/download"
+                        target="_blank">install vscode</a> just follow the instructions given on their official site.
+                </li>
+                <li>Create a file on in system at your preferred location.
+                    <div class="side-note">Keep in mind the extension should be .html</div>
+                </li>
+                <li>Write the following code in your .html file
+                    <br />
+                    <textarea readonly cols='100' style="height: 200px;  resize: none; " disabled>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Document</title>
+                    </head>
+                    <body>
+                        Hello world!
+                    </body>
+                    </html>
+                </textarea></li>
+            </ol>
+        </div>
+        <!-- getting started end -->
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    </div>
+</body>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Nagdoo/nagdoo.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
